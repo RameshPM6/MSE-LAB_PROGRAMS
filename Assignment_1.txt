@@ -1,0 +1,49 @@
+Protocol V/S SubClass
+-----------------------
+* In case of protocols we have to define methods shared by both class types(i.e.,Interface and protocol)twice.
+Protocols are generally reserved for specific patterns, such as the delegation pattern, to add security etc.
+when several classes already embedded in a class hierarchy need to share common methods and have this sharing
+be documented in some way. If one class can be represented as a more specialized version
+of another, you should inherit.
+
+* Subclassing is for when you want to inherit the traits and behaviors of your superclass while modifying
+it in some way.i.e, When we need to use the method of super class for the updations or modifications to be done
+for the particular task then subclass method make use of super class methods.
+
+* A Subclass inherits methods and its variable from its super class, But where as in case of protocols their
+is concept of inheritence of methods and variables unlike in subclassing.
+
+* These two things can be best understood with the help of example.Consider a vehicle class, we can Inherit 
+many classes from it like class car or bus or bicycle.In case of subclass we can use anybase class variables
+or mothods for updation>In case of protocols(i.e, if car or bus are made as protocols) we can just use or
+say what they are doing, we cant do any modifications or updations.
+
+* In case of subclassing a method in subclass can override method in superclass,but whereas in case of 
+protocol der is no concept of method overridden.
+----------------------------------------------------------------------
+*Syntax: protocol
+----------------------------------------------------------------------
+@protocol abc:<NSProtocol> or <NSObject>
+//methods
+@end
+
+Implimentation.
+-----------------
+@interface class_name:NSObject <abc>
+{}
+//methods
+@end
+Must import protocol file in this file.
+--------------------------------------------------
+*Syntax:subclass:
+--------------------
+
+@interface sub_class_name:super_class_name
+//methods
+@end
+@implementation sub_class_name
+//definitions
+@end
+-----------------------------------------------------------------------------------------------------------------
+			
+-----------------------------------------------------------------------------------------------------------------
