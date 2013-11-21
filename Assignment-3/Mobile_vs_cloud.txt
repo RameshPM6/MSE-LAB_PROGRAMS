@@ -1,0 +1,23 @@
+Differences between Mobile and Cloud computing:
+---------------------------------------------------------------------
+
+S.No		Mobile computing															Cloud computing
+-------------------------------------------------------------------------------------------------------
+
+1.          Mobile computing is human–computer                                   Cloud computing is an expression used to describe
+		    interaction by which a computer is                                   a variety of computing concepts that involve a large
+			expected to be transported during                                    number of computers connected through a real-time
+			normal usage.                                                        communication network such as the Internet.
+			
+2.          It involves a physical device                                        It is a service which can be used with the help of a
+			that is capable of certain computing                                 physical device with internet access to access it.
+			capabilities.
+			
+3.          Information can be lost if any damage								 Information can never be lost if its stored on cloud 
+			happens to the physical device.								         even if any damage happens to the physical device.
+			
+4.          It is fast in the sense that everything 							 It is comparatively slow because the information needs to 
+			is available in hand.												 be accessed from the cloud using internet.
+			
+5.          It minimizes the cost by reducing user								 It minimizes the cost by using virtualization.
+			interactions.

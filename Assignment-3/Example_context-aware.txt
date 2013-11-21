@@ -1,0 +1,7 @@
+Example for an application simulating context-aware computing:
+---------------------------------------------------------------------
+
+Application Name: WiFi Chat , an Android mobile application.
+
+Justification:  Wi-Fi proximity is the main idea behind Wi-Fi chat. If two users can see the same Wi-Fi access point (Wi-Fi network) then it is very
+                probable that both can see each other. In other words, it is very likely that both are close to each other. Close in the geographical sense, of course.So, WiFiChat lets them create discussions (forums) as well as live web chats associated with Wi-Fi access points.  

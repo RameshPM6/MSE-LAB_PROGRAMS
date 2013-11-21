@@ -1,0 +1,47 @@
+Dalvik Virtual Machine Instructions
+-------------------------------------------------------------
+1.
+	a)Instruction Name: Moves the content of vy into vx. Both registers must be in the first 256 register range.
+	
+	b)Syntax: move vx,vy
+	
+	c)Example: 0110 - move v0, v1
+			   Moves v1 into v0.
+			   
+			  
+2.
+	a)Instruction Name: Return with vx return value
+	
+	b)Syntax: return vx
+	
+	c)Example: 0F00 - return v0
+			   Returns with return value in v0.
+			   
+			   
+3.
+	a)Instruction Name: Instantiates an object type and puts the reference of the newly created instance into vx.
+	
+	b)Syntax: new-instance vx,type
+	
+	c)Example: 2200 1500 - new-instance v0, java.io.FileInputStream // type@0015
+               Instantiates type@0015 (entry #15H in the type table) and puts its reference into v0.
+			   
+			   
+4.
+	a)Instruction Name: Throws an exception object. The reference of the exception object is in vx
+	
+	b)Syntax: throw vx
+	
+	c)Example: 2700 - throw v0
+			   Throws an exception. The exception object reference is in v0.
+			   
+			   
+5.
+	a)Instruction Name: Unconditional jump by short offset.
+	
+	b)Syntax: goto target
+	
+	c)Example: 28F0 - goto 0005 // -0010
+			   Jumps to current position-16 words (hex 10). 0005 is the label of the target instruction.
+			   
+-----------------------------------------------------------------------------------------------------------------------------------------------
